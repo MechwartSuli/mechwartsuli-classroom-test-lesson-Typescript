@@ -1,0 +1,35 @@
+// Változó definiálása, ami egy string típusú nevet tárol
+let myName: string = 'Dave'
+
+// Változó definiálása, ami egy boolean értéket tárol, jelezve, hogy egy művelet töltődik
+let isloading: boolean = true
+
+// A myName változó új értéket kap, ami egy string típusú szám
+myName = "432"
+
+// Egy változó definiálása, ami lehet string vagy number típusú
+let album: string | number;
+
+// A változó értéke egy string típusú értéket kap
+album = "Van Halen"
+
+// A változó értéke egy number típusú értéket kap
+album = 3
+
+// Egy függvény definiálása, amely két paramétert vár: egy number típusút és egy string típusút
+const sum = (a:number, b:string) => {
+    // A függvény visszaadja a két paraméter összefűzését, amely egy string lesz
+    return a + b
+}
+
+// A sum függvény hívása a paraméterekkel (3 és "33"), és az eredmény kiíratása a konzolra
+console.log(sum(3,"33")) // Eredmény: "333"
+
+// Változó definiálása, ami lehet string vagy number típusú
+let postId: string | number
+
+// Változó definiálása, ami lehet number, boolean vagy string típusú
+let isActive: number | boolean | string
+
+// Reguláris kifejezés definiálása, amely az összes szó karaktert keresi globálisan
+let re: RegExp = /\w+/g
